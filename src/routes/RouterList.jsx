@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import About from '../pages/About/About';
-import Home from '../pages/Home/Home';
-import Analytics from '../pages/Analytics/Analytics';
+import About from '../pages/About/About.jsx';
+import Home from '../pages/Home/Home.jsx';
+import Analytics from '../pages/Analytics/Analytics.jsx';
 
 const RouterList = () => (
   <Switch>

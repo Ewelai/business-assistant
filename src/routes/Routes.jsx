@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import RouterList from './RouterList';
+import Header from '../components/Header/Header.jsx';
+import Footer from '../components/Footer/Footer.jsx';
+import RouterList from './RouterList.jsx';
 
 class Routes extends Component {
   render() {
