@@ -33,7 +33,7 @@
     ],
     "rules": {
        "prettier/prettier": ["error"],
-        "no-console": "error",
+        "no-console": "warn",
         "indent": [
 			"error",
 			2
