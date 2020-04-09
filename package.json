@@ -7,6 +7,13 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-jest-enzyme": "^7.1.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "lint-staged": "^10.1.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
@@ -15,10 +22,37 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "lint": "eslint . --debug",
+    "lintS": "eslint --debug src/",
+    "lint:writeS": "eslint --fix --debug .",
+    "prettier": "prettier --write src/**/*.jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "lint-stagedS": {
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add ."
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add ."
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add ."
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,11 +70,14 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "prettier": "^2.0.2"
+    "husky": "^4.2.3",
+    "prettier": "^2.0.4"
   }
 }
