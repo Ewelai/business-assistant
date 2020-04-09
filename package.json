@@ -24,19 +24,11 @@
   "scripts": {
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "lint": "eslint . --debug",
-    "lintS": "eslint --debug src/",
-    "lint:writeS": "eslint --fix --debug .",
     "prettier": "prettier --write src/**/*.jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "lint-stagedS": {
-    "*.(js|jsx)": [
-      "npm run lint:write",
-      "git add ."
-    ]
   },
   "husky": {
     "hooks": {
@@ -46,7 +38,7 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint --fix",
+      "eslint --debug --fix",
       "git add ."
     ],
     "*.+(json|css|md)": [

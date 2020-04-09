@@ -32,52 +32,54 @@
         "prettier"
     ],
     "rules": {
-        "no-bitwise": "off",
-        "linebreak-style": "off", // Неправильно работает в Windows.
-
-        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-        "no-plusplus": "off",
-
-        "max-len": ["error", 100, 2, { "ignoreUrls": true }], // airbnb позволяет некоторые пограничные случаи
-        "no-console": "error", // airbnb использует предупреждение
-        "no-alert": "error", // airbnb использует предупреждение
-
-        "radix": "off", // parseInt, parseFloat и radix выключены. Мне это не нравится.
-
-        "react/require-default-props": "off", // airbnb использует уведомление об ошибке
-        "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
-        "react/forbid-prop-types": "off", // airbnb использует уведомление об ошибке
-        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }], // airbnb использует .jsx
-
-        "prefer-destructuring": "off",
-
-        "react/no-did-mount-set-state": "off",
-        "react/jsx-one-expression-per-line": "off",
-
-        "jsx-a11y/anchor-is-valid": ["error", { "components": ["Link"], "specialLink": ["to"] }],
-        "jsx-a11y/label-has-for": [2, {
-            "required": {
-                "every": ["id"]
-            }
-        }], // для ошибки вложенных свойств htmlFor элементов label
-
-        "prettier/prettier": ["error"]
+       "prettier/prettier": ["error"],
+        "no-console": "warn",
+        "indent": [
+			"error",
+			2
+		],
+		"no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+		"linebreak-style": 0,
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		]
     }
+
     // "rules": {
-    //     "no-console": "warn",
-    //     "indent": [
-	// 		"error",
-	// 		2
-	// 	],
-	// 	"no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-	// 	"linebreak-style": 0,
-	// 	"quotes": [
-	// 		"error",
-	// 		"single"
-	// 	],
-	// 	"semi": [
-	// 		"error",
-	// 		"always"
-	// 	]
+    //     "no-bitwise": "off",
+    //     "linebreak-style": "off", // Неправильно работает в Windows.
+
+    //     "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    //     "no-plusplus": "off",
+
+    //     "max-len": ["error", 100, 2, { "ignoreUrls": true }], // airbnb позволяет некоторые пограничные случаи
+    //     "no-console": "error", // airbnb использует предупреждение
+    //     "no-alert": "error", // airbnb использует предупреждение
+
+    //     "radix": "off", // parseInt, parseFloat и radix выключены. Мне это не нравится.
+
+    //     "react/require-default-props": "off", // airbnb использует уведомление об ошибке
+    //     "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    //     "react/forbid-prop-types": "off", // airbnb использует уведомление об ошибке
+    //     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }], // airbnb использует .jsx
+
+    //     "prefer-destructuring": "off",
+
+    //     "react/no-did-mount-set-state": "off",
+    //     "react/jsx-one-expression-per-line": "off",
+
+    //     "jsx-a11y/anchor-is-valid": ["error", { "components": ["Link"], "specialLink": ["to"] }],
+    //     "jsx-a11y/label-has-for": [2, {
+    //         "required": {
+    //             "every": ["id"]
+    //         }
+    //     }], // для ошибки вложенных свойств htmlFor элементов label
+
+    //     "prettier/prettier": ["error"]
     // }
 }
