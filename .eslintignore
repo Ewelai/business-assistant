@@ -4,3 +4,6 @@
 serviceWorker.js
 setupTests.js
 /public
+
+package.json
+package-lock.json
