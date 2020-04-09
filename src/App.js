@@ -1,11 +1,11 @@
 import React from 'react';
-import Routes from './routes/Routes.jsx';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes/Routes';
 
 function App() {
   return (
     <Router>
-      <Routes/>
+      <Routes />
     </Router>
   );
 }
