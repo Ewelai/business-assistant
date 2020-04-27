@@ -1,0 +1,17 @@
+[
+  {
+    "imageUrl": "https://investinbelarus.by/upload/medialibrary/07f/07f353911dc0e4f930f8486f85024bcd.jpg",
+    "label": "Надежность",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "imageUrl": "https://img4.goodfon.ru/wallpaper/big/6/b1/makbuk-iabloko-aifon-ten-telefon-noutbuk-ekran-ruchka-gazata.jpg",
+    "label": "Конфиденциальность",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "imageUrl": "https://img5.goodfon.ru/wallpaper/nbig/d/b9/dengi-monety-biudzhet-ekonomiia.jpg",
+    "label": "Экономия",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]
